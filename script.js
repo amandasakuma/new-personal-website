@@ -1,4 +1,6 @@
-const h2 = document.createElement("h2");
-h2.textContent = "Journalist | Student";
-document.querySelector("body").appendChild(h2);
+const headshot = document.getElementById("headshot");
 
+headshot.addEventListener('click', changeColor);
+function changeColor() {
+    headshot.setAttribute("src", 'headshot-pixel-blue.png' )
+}
